@@ -1,0 +1,56 @@
+.takenotehead{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom: 30px;
+}
+.takenote{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.note1{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    border-color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#notetake
+{
+    position: relative;
+    left:15px;
+    font-weight: 400;
+    opacity: 0.9;
+    border: none;
+}
+.checkbox{
+    position: relative;
+    left: 255px;
+    top:4px;
+    opacity: 0.5;
+}
+.brush{
+    position: relative;
+    left: 285px;
+    top:4px;
+    opacity: 0.5;
+}
+.takenoteimage{
+    position: relative;
+    left: 310px;
+    top:4px;
+    opacity: 0.5;
+}

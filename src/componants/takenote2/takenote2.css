@@ -1,0 +1,99 @@
+.takeanotehead2{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+}
+.takenote2{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.note2{
+    width: 70%;
+    height: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#noteTitle2{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+#pin{
+    position: relative;
+    right:15px;
+    opacity: 0.8;
+}
+.note-take2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#noteAtake2{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.close{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#closebutton{
+    color: #000;
+    text-transform: none;
+    position: relative;
+    top:3px;
+}
+.icon2{
+    width: 75%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    opacity: 0.6;
+}
+.closetext{
+    position: relative;
+    right:40px;
+    top:5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+#undo{
+    opacity: 0.6;
+}
+#redo{
+    opacity: 0.6;
+}

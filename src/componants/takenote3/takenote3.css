@@ -1,0 +1,59 @@
+.takenote3{
+    width: 18vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Note-Box{
+    width: 95%;
+    height: 90%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.title3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#noteTitle3{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+#pin3{
+    position: relative;
+    right:15px;
+    top:5px;
+    opacity: 0.6;
+}
+.TakeNote3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+#noteAtake3{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.icon3{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    opacity: 0.6;
+}
