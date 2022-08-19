@@ -14,13 +14,27 @@
     flex-direction: column;
     border-radius: 8px;
 }
-.title3{
+.title-pin-des{
     width: 100%;
-    height: 30%;
+    height: 62%;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+}
+.title3{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+.note-title3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid green; */
 }
 #noteTitle3{
     position: relative;
@@ -29,15 +43,21 @@
     font-weight: 400;
     opacity: 0.9;
 }
+.pinIcon{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 50%;
+}
 #pin3{
     position: relative;
-    right:15px;
-    top:5px;
+    left: 5px;
+    top: 8px;
     opacity: 0.6;
 }
 .TakeNote3{
     width: 100%;
-    height: 30%;
+    height: 50%;
     display: flex;
     align-items: center;
 }
@@ -55,5 +75,88 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+    opacity: 0.6;
+}
+
+
+.takeanotehead2-3{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.takenote2-3{
+    width: 100%;
+    height: 100%;
+}
+.note2-3{
+    height: 35%;
+    /* border: 1px solid red; */
+}
+.title2-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#noteTitle2-3{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9
+}
+#pin2-3{
+    position: relative;
+    right:15px;
+    opacity: 0.8;
+}
+.note-take2-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#noteAtake2-3{
+    position: relative;
+    left:15px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.close2-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#closebutton2-3{
+    color: #000;
+    text-transform: none;
+}
+.icon2-3{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.6;
+}
+.closetext2-3{
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+#undo2-3{
+    opacity: 0.6;
+}
+#redo2-3{
     opacity: 0.6;
 }

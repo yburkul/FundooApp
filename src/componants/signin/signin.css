@@ -128,3 +128,174 @@
     font-weight: 500;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
 }
+
+@media only screen and (min-width :320px) and (max-width :480px) {
+    .Sign-in-Page{
+        width: 100vw;
+        height: 110vh;
+    }
+    .Signin-Container{
+        width: 100%;
+        height: 100%;
+    }
+    .Containe{
+        width: 85%;
+        height: 90%;
+    }
+    .Google-img{
+        width: 22%;
+        height: 6%;
+    }
+    #img-google{
+        width: 100%;
+        height: 100%;
+    }
+    .Text-1{
+        width: 50%;
+        height: 12%;
+    }
+    .Text2{
+        width: 80%;
+    }
+    .UserName{
+        width: 100%;
+    }
+    #outlined-basic{
+        width: 240px;
+        display: block;
+    }
+    .UserName a{
+        width: 80%;
+    }
+    .UserPassword{
+        width: 100%;
+        position: relative;
+        top:10px;
+    }
+    #outlined-basic-password{
+        width: 240px;
+    }
+    .UserPassword a{
+        width: 80%;
+    }
+    .middle-text{
+        width: 100%;
+        height: 6%;
+        text-align: start;
+    }
+    .middletext{
+        width: 100%;
+    }
+    .button-section{
+        width: 100%;
+        height: 10%;
+    }
+}
+
+@media only screen and (min-width :481px) and (max-width :768px) {
+
+    .Sign-in-Page{
+        width: 100vw;
+        height: 100vh;
+    }
+    .Signin-Container{
+        width: 100%;
+        height: 100%;
+    }
+    .Containe{
+        width: 75%;
+        height: 90%;
+    }
+    .Google-img{
+        width: 22%;
+        height: 6%;
+    }
+    #img-google{
+        width: 100%;
+        height: 100%;
+    }
+    .Text-1{
+        width: 50%;
+        height: 12%;
+    }
+    .Text2{
+        width: 80%;
+        height: 7%;
+    }
+    .UserName{
+        width: 100%;
+    }
+    #outlined-basic{
+        width: 380px;
+        display: block;
+    }
+    .UserName a{
+        width: 80%;
+    }
+    .UserPassword{
+        width: 100%;
+        position: relative;
+        top:10px;
+    }
+    #outlined-basic-password{
+        width: 380px;
+    }
+    .UserPassword a{
+        width: 80%;
+    }
+    .middle-text{
+        width: 100%;
+        height: 6%;
+        text-align: start;
+    }
+    .middletext{
+        width: 100%;
+        left:5px;
+        top:20px;
+    }
+    .button-section{
+        width: 100%;
+        height: 10%;
+    }
+}
+
+@media only screen and (min-width :769px) and (max-width :1024px) {
+    .Sign-in-Page{
+        width: 100vw;
+        height: 100vh;
+    }
+    .Signin-Container{
+        width: 60%;
+        height: 70%;
+        border: 1px solid #e0e0e0;
+    }
+    .Containe{
+        width: 85%;
+        height: 90%;
+    }
+    .Google-img{
+        width: 22%;
+        height: 6%;
+    }
+    #img-google{
+        width: 100%;
+        height: 100%;
+    }
+    .Text-1{
+        width: 80%;
+        height: 12%;
+    }
+    .Text2{
+        width: 50%;
+        height: 10%;
+    }
+    .UserName{
+        width: 100%;
+    }
+    #outlined-basic{
+        width: 378px;
+    }
+    #outlined-basic-password{
+        width: 378px;
+    }
+}

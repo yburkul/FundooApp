@@ -1,3 +1,4 @@
+import { Grid } from '@mui/material'
 import { display } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 import { getNoteList } from '../../services/dataService'
@@ -74,12 +75,12 @@ function Dashboard(props) {
                 toggle ? <Takenote2 listenToTakeNoteTwo = {listenToTakeNoteTwo} autoRefresh={autoRefresh}/> : <TakeNote1 listenToTakeNoteOne = {listenToTakeNoteOne}/>
             }
         </div>
-        <div style={{width: '73vw', height: 'auto',margin:'100px', display:'flex', flexDirection:'row',
+        <Grid container spacing={1} style={{border:'0px solid red', width: '65vw', height: 'auto',margin:'100px', display:'flex', flexDirection:'row',
                      flexWrap:'wrap', marginTop: '0px', marginLeft: '310px'}}>
             {
-               noteList.map((note) =>(<Takenote3 note = {note} autoRefresh ={autoRefresh}/>))  
+               noteList.map((note) =>(<Grid item lg={3.4} md={3.4} sm={3.4}><Takenote3 note = {note} autoRefresh ={autoRefresh}/></Grid>))  
             }
-        </div>
+        </Grid>
     </div>
   )
 }

@@ -149,7 +149,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    top:130px;
+    top:100px;
 }
 #sign-in-text{
     text-transform: none;
@@ -180,4 +180,268 @@
     top:60px;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media only screen and (min-width :320px) and (max-width :480px) {
+    .Sign-up-Page{
+        width: 100vw;
+        height: 100vh;
+    }
+    .Signup-Container{
+        width: 100%;
+        height: 100%;
+        top:0px;
+        border-radius: 0px;
+    
+    }
+    .Container{
+        width: 85%;
+        height: 100%;
+        top: 0px;
+        justify-content: center;
+    }
+    .User-info{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: none;
+    }
+    .Logo{
+        display: none;
+    }
+    .Google-img-box{
+        width: 20%;
+        height: 4%;
+    }
+    #google-img{
+        width: 100%;
+        height: 100%;
+    }
+    .Text1{
+        width: 70%;
+        height: 10%;
+        display: flex;
+        text-align: start;
+        font-size: 20px;
+    }
+    .UserName-Box{
+        width: 100%;
+        height: 17%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top:20px;
+    }
+    #outlined-size-small{
+        width: 170px;
+    }
+    .User-gmail{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        top:27px;
+    }
+    #UserGmail{
+        width: 378px;
+    }
+    .smallText{
+        position: relative;
+        top:25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 13px;
+        white-space: normal;
+        opacity: 0.8;
+    }
+    #small-text{
+        position: relative;
+        left:10px;
+    }
+    .blue-text{
+        height: 40px;
+        top:20px;
+    }
+    .UserPassword-Box{
+        width: 100%;
+        height: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top:35px;
+    }
+    .Password-text{
+        top:35px;
+    }
+    .check-box{
+        top: 45px;
+        color: #202124;
+    }
+    .sign-in-button-section{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top:70px;
+    }
+}
+
+@media only screen and (min-width :481px) and (max-width :768px) {
+    .Sign-up-Page{
+        width: 100vw;
+        height: 120vh;
+    }
+    .Signup-Container{
+        width: 100%;
+        height: 95%;
+        top:0px;
+        border-radius: 0px;
+        border: 0px;
+    }
+    .Container{
+        width: 85%;
+        height: 90%;
+        top: 0px;
+        justify-content: center;
+    }
+    .User-info{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Logo{
+        display: none;
+    }
+    .Google-img-box{
+        width: 20%;
+        height: 4%;
+    }
+    #google-img{
+        width: 100%;
+        height: 100%;
+    }
+    .Text1{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        text-align: start;
+        font-size: 22px;
+    }
+    .UserName-Box{
+        width: 100%;
+        height: 17%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top:20px;
+    }
+    #outlined-size-small{
+        width: 170px;
+    }
+    .User-gmail{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        top:27px;
+    }
+    #UserGmail{
+        width: 378px;
+    }
+    .smallText{
+        position: relative;
+        top:25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 13px;
+        white-space: normal;
+        opacity: 0.8;
+    }
+    #small-text{
+        position: relative;
+        left:10px;
+    }
+    .blue-text{
+        height: 40px;
+        top:20px;
+    }
+    .UserPassword-Box{
+        width: 100%;
+        height: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top:35px;
+    }
+    .Password-text{
+        top:35px;
+    }
+    .check-box{
+        top: 45px;
+        color: #202124;
+    }
+    .sign-in-button-section{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top:70px;
+    }
+}
+
+@media only screen and (min-width :769px) and (max-width :1024px) {
+    .Sign-up-Page{
+        width: 100vw;
+        height: 100vh;
+    }
+    .Signup-Container{
+        width: 65%;
+        height: 60%;
+    }
+    .Container{
+        width: 90%;
+        height: 90%;
+        top:25px;
+    }
+    .User-info{
+        width: 90%;
+        height: 95%;
+        justify-content: center;
+    }
+    .Logo{
+        display: none;
+    }
+    .Google-img-box{
+        width: 22%;
+        height: 7%;
+    }
+    #google-img{
+        width: 100%;
+        height: 100%;
+    }
+    .Text1{
+        width: 100%;
+        height: 10%;
+        font-size: 26px;
+    }
 }

@@ -3,10 +3,12 @@ import './signin.css'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { login } from "../../services/userService";
+import { useNavigate } from "react-router-dom";
 const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
 const passwordRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])([a-zA-Z0-9]*).{8,}$/;
 
 function Signin() {
+    const navigate = useNavigate()
     const [userInput, setUserInput] = React.useState({email: "", password: ""})
     const [regexObj, setRegexObj] = React.useState({emailBorder: false, emailHelper: "", passwordBorder: false, passwordHelper: ""})
 
@@ -16,7 +18,6 @@ function Signin() {
         }))
         console.log(event.target.value)
     }
-
     const takePassword = (event) =>{
         setUserInput(prevState => ({ ...prevState,
             password: event.target.value
@@ -60,9 +61,14 @@ function Signin() {
 
             login(userInput).then((response) => {console.log(response); 
                 localStorage.setItem("token", response.data.id)
+                navigate('/dashboard')
             }).catch((error) => {console.log(error)})
             console.log("log in succesfull")
         }  
+    }
+
+    const newAccount = () =>{
+        navigate('/signup')
     }
     
     return(
@@ -79,12 +85,12 @@ function Signin() {
                         <span>Use your Google Account</span>
                     </div>
                     <div className="UserName">
-                        <TextField id="outlined-basic" label="Email or Phone" variant="outlined" 
+                        <TextField id="outlined-basic" label="Email or Phone" variant="outlined" fullWidth="true" 
                         onChange={takeUserName} error={regexObj.emailBorder} helperText={regexObj.emailHelper} />
                         <a>Forget email?</a>
                     </div>
                     <div className="UserPassword">
-                        <TextField id="outlined-basic-password" label="Password" variant="outlined" 
+                        <TextField type="password" id="outlined-basic-password" label="Password" variant="outlined" fullWidth="true" 
                         onChange={takePassword} error={regexObj.passwordBorder} helperText={regexObj.passwordHelper} />
                         <a>Forget Password?</a>
                     </div>
@@ -96,7 +102,7 @@ function Signin() {
                     </div>
                     <div className="button-section">
                         <div className="create-account">
-                            <Button variant="text" id="create-account-text" >Create account</Button>
+                            <Button variant="text" id="create-account-text" onClick={newAccount}>Create account</Button>
                         </div>
                         <div className="Next">
                             <Button variant="contained" onClick={submit}>Next</Button>

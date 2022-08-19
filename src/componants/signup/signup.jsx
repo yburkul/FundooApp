@@ -142,16 +142,16 @@ function Signup() {
                     </div>
                     <div className="UserName-Box">
                         <div className='FirstName'>
-                            <TextField label="First name" id="outlined-size-small" size="small"
+                            <TextField label="First name" id="outlined-size-small" size="small" fullWidth="true"
                             onChange={takeUserFirstNameInput} error={regexObject.firstNameBorder} helperText={regexObject.firstNameHelper}/>
                         </div>
                         <div className='LastName'>
-                            <TextField label="Last name" id="outlined-size-small" size="small"
+                            <TextField label="Last name" id="outlined-size-small" size="small" fullWidth="true"
                             onChange={takeUserLastNameInput} error={regexObject.lastNameBorder} helperText={regexObject.lastNameHelper}/>
                         </div>
                     </div>
                     <div className='User-gmail'>
-                        <TextField label="User name" id="UserGmail" size="small"
+                        <TextField label="User name" id="UserGmail" size="small" fullWidth="true"
                         onChange={takeUserEmailInput} error={regexObject.emailBorder} helperText={regexObject.emailHelper}/>
                     </div>
                     <div className='smallText'>
@@ -162,11 +162,11 @@ function Signup() {
                     </div>
                     <div className="UserPassword-Box">
                         <div className='Password'>
-                            <TextField label="Password" id="outlined-size-small" size="small"
+                            <TextField label="Password" id="outlined-size-small" size="small" fullWidth="true"
                             onChange={takeUserPasswordInput} error={regexObject.userPasswordBorder} helperText={regexObject.userPasswordHelper}/>
                         </div>
                         <div className='Confirm'>
-                            <TextField label="Confirm" id="outlined-size-small" size="small"
+                            <TextField label="Confirm" id="outlined-size-small" size="small" fullWidth="true"
                             onChange={takeUserConfirmPasswordInput} error={regexObject.userConfirmPasswordBorder} helperText={regexObject.userConfirmPasswordHelper}/>
                         </div>
                     </div>

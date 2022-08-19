@@ -11,11 +11,14 @@ function TakeNote1(props) {
 
     }
 
+
   return (
     <div className='takenotehead' onClick={openTakeNoteTwo}>
         <div className='takenote'>
             <div className='note1'>
-                <InputBase id='notetake' placeholder='Take a note..'/>
+                <div  className='notetake'>
+                <InputBase id='note-take' placeholder='Take a note..'/>
+                </div>
                 <div className='checkbox'>
                     <CheckBoxOutlinedIcon/>
                 </div>
