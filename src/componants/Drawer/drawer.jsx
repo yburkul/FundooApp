@@ -24,12 +24,13 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import {connect} from 'react-redux'
 
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
-  marginTop: 66,
+  marginTop: 75,
   borderRight: '1px solid white' ,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
@@ -39,7 +40,7 @@ const openedMixin = (theme) => ({
 });
 
 const closedMixin = (theme) => ({
-    marginTop: 66,
+    marginTop: 75,
     borderRight: '1px solid white' ,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
@@ -96,7 +97,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function Drawer1(props) {
+function Drawer1(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -110,6 +111,9 @@ export default function Drawer1(props) {
 
   const selectNotes = (noteOption) => {
     props.listenToDrawer(noteOption)
+    props.dispatch({
+      type: `${noteOption}`
+    })
   }
 
   return (
@@ -195,3 +199,5 @@ export default function Drawer1(props) {
     </Box>
   );
 }
+
+export default connect()(Drawer1)
